@@ -1,0 +1,32 @@
+<form name="pets" method="post" action="index.php?page=addPet">
+  <div class="pet-selector-grid">
+    
+    <label for="name">Nombre</label>
+    <input name="name" type="text" placeholder="Nombre de la mascota" id="name" required />
+
+    <label for="type">Tipo</label>
+    <select name="type" id="type">
+      <option value="1">Mamifero</option>
+      <option value="2">Ave</option>
+      <option value="3">Reptil</option>
+      <option value="4">Insecto</option>
+      <option value="5">Crustaceo</option>
+      <option value="6">Pez</option>
+      <option value="7">Otro</option>
+
+    </select>
+
+    <label for="age">Edad</label>
+    <input type="text" placeholder="Edad de la mascota" id="age" name="age"/>
+
+    <div class="onecol">
+      <label for="sickness">Enfermedades</label>
+      <textarea name="sickness" id="sickness" cols="30" rows="3"></textarea>
+
+      <input type="submit" value="Guardar Registros" class="button" id="submit"/>
+    </div>
+
+  </div>
+</form>
+
+<script src="js/validateForm.js"></script>
